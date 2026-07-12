@@ -8,8 +8,8 @@
 |------|------|
 | 前端 | React 19 + Ant Design 6 + React Router 7 + TipTap |
 | 后端 | Java 17 + Spring Boot 3.2 + Spring Security + JWT + MyBatis-Plus |
-| 数据库 | MySQL 8.0 |
-| 部署 | Docker + Docker Compose |
+| 数据库 | MySQL 8.0 / PostgreSQL 16 (Render) |
+| 部署 | Docker + Docker Compose / Render.com |
 
 ## 功能模块
 
@@ -25,7 +25,22 @@
 
 ## 快速开始
 
-### 方式一：Docker 一键部署（推荐）
+### 方式一：一键启动（推荐）
+
+```bash
+# Windows (双击即可)
+start.bat
+
+# 或 PowerShell
+.\start.ps1
+
+# Git Bash / WSL
+./start.sh
+```
+
+脚本会自动检查环境、编译后端、关闭占用端口并启动前后端服务。
+
+### 方式二：Docker 一键部署
 
 ```bash
 # 1. 确保已安装 Docker Desktop
@@ -35,24 +50,18 @@ docker-compose up --build
 # 等待所有服务启动后访问：
 # 前端：http://localhost
 # 后端 API：http://localhost:8080
-# MySQL：localhost:3306 / root / root
+# PostgreSQL: localhost:5432 / blog_user / changeme
 ```
 
-默认管理员账号：
-- 用户名：`admin`
-- 密码：`admin123`
-
-### 方式二：本地开发
+### 方式三：手动本地开发
 
 #### 后端
 
 ```bash
-# 1. 创建数据库
+# 1. 确保 MySQL 正在运行，并导入数据库
 mysql -u root -p < backend/src/main/resources/schema.sql
 
-# 2. 修改 backend/src/main/resources/application.yml 中的数据库连接信息
-
-# 3. 启动后端
+# 2. 启动后端
 cd backend
 mvn spring-boot:run
 # 后端运行在 http://localhost:8080
@@ -74,32 +83,45 @@ npm run dev
 
 ```
 blog-platform/
-├── docker-compose.yml          # Docker 编排
-├── backend/                    # Spring Boot 后端
+├── start.bat                 # Windows 一键启动 (批处理)
+├── start.ps1                 # Windows 一键启动 (PowerShell)
+├── start.sh                  # Linux/macOS 一键启动 (Bash)
+├── docker-compose.yml        # Docker 编排
+├── backend/                  # Spring Boot 后端
 │   ├── src/main/java/com/blog/
 │   │   ├── BlogApplication.java
-│   │   ├── config/             # 安全、跨域、MyBatis 配置
-│   │   ├── controller/         # REST API 控制器
-│   │   ├── service/            # 业务逻辑层
-│   │   ├── mapper/             # 数据访问层
-│   │   ├── entity/             # 实体类
-│   │   ├── dto/                # 数据传输对象
-│   │   ├── util/               # 工具类 (JWT)
-│   │   └── security/           # JWT 过滤器
+│   │   ├── config/           # 安全、跨域、MyBatis 配置
+│   │   ├── controller/       # REST API 控制器
+│   │   ├── service/          # 业务逻辑层
+│   │   ├── mapper/           # 数据访问层
+│   │   ├── entity/           # 实体类
+│   │   ├── dto/              # 数据传输对象
+│   │   ├── util/             # 工具类 (JWT)
+│   │   └── security/         # JWT 过滤器
 │   └── src/main/resources/
-│       ├── application.yml
-│       └── schema.sql          # 数据库建表 + 初始数据
-├── frontend/                   # React 前端
+│       ├── application.properties
+│       ├── schema.sql        # MySQL 建表 + 初始数据 (本地开发)
+│       └── schema-pgsql.sql  # PostgreSQL 建表 (Render 部署)
+├── frontend/                 # React 前端
 │   ├── src/
-│   │   ├── api/                # Axios 请求封装
-│   │   ├── components/         # 通用组件
-│   │   ├── pages/              # 页面
-│   │   ├── store/              # 状态管理 (AuthContext)
-│   │   └── router/             # 路由配置
+│   │   ├── api/              # Axios 请求封装
+│   │   ├── components/       # 通用组件
+│   │   ├── pages/            # 页面
+│   │   ├── store/            # 状态管理 (AuthContext)
+│   │   └── router/           # 路由配置
 │   └── Dockerfile
 └── docker/
-    └── nginx.conf              # Nginx 反向代理配置
+    └── nginx.conf            # Nginx 反向代理配置
 ```
+
+## 部署上线
+
+项目支持部署到 Render.com（免费套餐）：
+- 后端：Render Web Service（Spring Boot + PostgreSQL）
+- 前端：Render Static Site（Vite 构建）
+- 数据库：Render PostgreSQL
+
+详见 [部署计划](plan/)。
 
 ## API 接口
 
@@ -129,3 +151,10 @@ blog-platform/
 | GET | /api/comments/pending | 待审核评论 | 管理员 |
 | PUT | /api/comments/:id/status | 审核评论 | 管理员 |
 | DELETE | /api/comments/:id | 删除评论 | 管理员 |
+
+## 默认账号
+
+| 角色 | 用户名 | 密码 |
+|------|--------|------|
+| 管理员 | admin | admin123 |
+| 普通用户 | zhangwei | 123456 |

@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "echo 请使用 start.bat (Windows) 或 ./start.sh (Git Bash) 启动项目",
+    "dev": "echo 请使用 start.bat (Windows) 或 ./start.sh (Git Bash) 启动项目"
+  },
   "dependencies": {
     "docx": "^9.7.1"
   }
