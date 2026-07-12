@@ -1,0 +1,22 @@
+{
+  "title": "基于Spring Boot与React的个人博客系统设计与实现",
+  "goal": "毕业设计答辩PPT：介绍基于Spring Boot与React的个人博客系统的设计与实现，涵盖选题背景、技术选型、系统设计、核心功能、测试验证、总结展望",
+  "themePack": "theme03",
+  "pageCount": 12,
+  "part": {
+    "index": 3,
+    "total": 3,
+    "startSlide": 11,
+    "endSlide": 12
+  },
+  "slides": [
+    {
+      "layout": "theme03_page056",
+      "props": {}
+    },
+    {
+      "layout": "theme03_page029",
+      "props": {}
+    }
+  ]
+}

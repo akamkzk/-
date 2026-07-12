@@ -1,0 +1,395 @@
+{
+  "goal": "D:\\项目\\毕业设计\\YHY  TEST\\output\\blog-defense-2026\\goal.part-03.json",
+  "themePack": "theme03",
+  "slideCount": 2,
+  "part": {
+    "index": 3,
+    "total": 3,
+    "startSlide": 11,
+    "endSlide": 12
+  },
+  "slides": [
+    {
+      "slide": 11,
+      "layout": "theme03_page056",
+      "label": "范式转变",
+      "roles": [],
+      "fillPlan": {
+        "text": [
+          {
+            "key": "copy.t001",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t002",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t003",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t004",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t005",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t006",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 20
+          },
+          {
+            "key": "copy.t007",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 36
+          },
+          {
+            "key": "copy.t008",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t009",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t010",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t011",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t012",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t013",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t014",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t015",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t016",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t017",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t018",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 42
+          },
+          {
+            "key": "copy.t019",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 42
+          },
+          {
+            "key": "copy.t020",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 26
+          },
+          {
+            "key": "copy.t021",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t022",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t023",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 24
+          },
+          {
+            "key": "copy.t024",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t025",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          }
+        ],
+        "arrays": [
+          {
+            "key": "narrativeItems",
+            "role": "misc",
+            "visibleCount": 3,
+            "maxCount": 3,
+            "countKey": null,
+            "itemShape": {
+              "k": "string",
+              "en": "string",
+              "v": "string"
+            },
+            "itemFields": {
+              "k": {
+                "role": "eyebrow",
+                "type": "string",
+                "maxChars": 18
+              },
+              "en": {
+                "role": "eyebrow",
+                "type": "string",
+                "maxChars": 18
+              },
+              "v": {
+                "role": "eyebrow",
+                "type": "string",
+                "maxChars": 18
+              }
+            }
+          },
+          {
+            "key": "deliveryItems",
+            "role": "misc",
+            "visibleCount": 4,
+            "maxCount": 4,
+            "countKey": null,
+            "itemShape": {
+              "k": "string",
+              "en": "string",
+              "v": "string"
+            },
+            "itemFields": {
+              "k": {
+                "role": "eyebrow",
+                "type": "string",
+                "maxChars": 18
+              },
+              "en": {
+                "role": "eyebrow",
+                "type": "string",
+                "maxChars": 18
+              },
+              "v": {
+                "role": "eyebrow",
+                "type": "string",
+                "maxChars": 18
+              }
+            }
+          }
+        ],
+        "media": []
+      }
+    },
+    {
+      "slide": 12,
+      "layout": "theme03_page029",
+      "label": "地区分布",
+      "roles": [
+        "distribution",
+        "image"
+      ],
+      "fillPlan": {
+        "text": [
+          {
+            "key": "copy.t001",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t002",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 27
+          },
+          {
+            "key": "copy.t003",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t004",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 24
+          },
+          {
+            "key": "copy.t005",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t006",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t007",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 42
+          },
+          {
+            "key": "copy.t008",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 24
+          },
+          {
+            "key": "copy.t009",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t010",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t011",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t012",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          },
+          {
+            "key": "copy.t013",
+            "role": "eyebrow",
+            "type": "string",
+            "maxChars": 18
+          }
+        ],
+        "arrays": [
+          {
+            "key": "data",
+            "role": "metric",
+            "visibleCount": 5,
+            "maxCount": 5,
+            "countKey": "itemCount",
+            "itemShape": {
+              "region": "string",
+              "en": "string",
+              "amt": "number",
+              "pct": "number"
+            },
+            "itemFields": {
+              "region": {
+                "role": "eyebrow",
+                "type": "string",
+                "maxChars": 18
+              },
+              "en": {
+                "role": "eyebrow",
+                "type": "string",
+                "maxChars": 18
+              },
+              "amt": {
+                "role": "metric",
+                "type": "number",
+                "numericRange": {
+                  "observedMin": 60,
+                  "observedMax": 620
+                },
+                "numericBounds": {
+                  "min": 0,
+                  "max": 682,
+                  "enforced": false
+                },
+                "maxChars": 9
+              },
+              "pct": {
+                "role": "metric",
+                "type": "number",
+                "numericRange": {
+                  "observedMin": 6.2,
+                  "observedMax": 63.9
+                },
+                "numericBounds": {
+                  "min": 0,
+                  "max": 70.29,
+                  "enforced": false
+                },
+                "maxChars": 9
+              }
+            }
+          }
+        ],
+        "media": [
+          {
+            "key": "images",
+            "write": "props.images",
+            "visibleCount": 1,
+            "maxCount": 2,
+            "countKey": "imageCount",
+            "accepts": [
+              "image",
+              "video"
+            ],
+            "acceptedKindsSource": "mediaArrayField",
+            "itemShape": "string | {src,kind,type}"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+backend/target/
+backend/.mvn/buildcache
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Build
+frontend/dist/
+
+# Environment
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

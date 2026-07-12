@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #0f0c29;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import './animations.less';
+@import './tiptap.less';
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========================================
+   Responsive Media Queries
+   ======================================== */
+
+/* Tablet: 768px and below */
+@media (max-width: 768px) {
+  /* Ant Design table horizontal scroll */
+  .ant-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .ant-table {
+    min-width: 600px;
+  }
+
+  /* Ant Design tabs */
+  .ant-tabs-nav {
+    padding-inline-start: 0 !important;
+  }
+
+  /* Ant Design form adjustments */
+  .ant-form-item-label {
+    min-width: auto !important;
+  }
+
+  /* Ant Design modal full-screen on mobile */
+  .ant-modal {
+    max-width: 100% !important;
+    top: 0 !important;
+    bottom: 0 !important;
+  }
+
+  .ant-modal-body {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+
+  /* Ant Design dropdown menu */
+  .ant-dropdown-menu {
+    max-width: 90vw;
+  }
+
+  /* Ant Design select dropdown */
+  .ant-select-dropdown {
+    min-width: auto !important;
+    max-width: 90vw;
+  }
+
+  /* Ant Design pagination centered */
+  .ant-pagination {
+    justify-content: center !important;
+  }
+
+  /* Ant Design alerts */
+  .ant-alert {
+    margin-bottom: 16px !important;
+  }
+
+  /* Mobile menu */
+  .mobile-menu {
+    padding: 8px 0;
+  }
+
+  .mobile-menu .ant-menu-item {
+    height: 48px !important;
+    line-height: 48px !important;
+    font-size: 15px !important;
+  }
+
+  /* Step indicators */
+  .ant-steps {
+    padding: 0 8px;
+  }
+
+  /* Upload drag area */
+  .ant-upload-drag {
+    max-width: 100% !important;
+  }
+}
+
+/* Phone: 480px and below */
+@media (max-width: 480px) {
+  /* Reduce spacing everywhere */
+  .ant-card,
+  .glass-card {
+    border-radius: 12px !important;
+  }
+
+  /* Smaller font sizes */
+  h1 {
+    font-size: 24px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  /* Ant Design buttons compact */
+  .ant-btn {
+    font-size: 14px !important;
+    padding-inline: 12px !important;
+  }
+
+  .ant-btn-icon-only {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  /* Ant Design inputs */
+  .ant-input,
+  .ant-input-password,
+  .ant-input-textarea input {
+    font-size: 14px !important;
+  }
+
+  /* Ant Design tabs smaller */
+  .ant-tabs-tab {
+    padding-inline: 12px !important;
+    font-size: 13px !important;
+  }
+
+  /* Ant Design stat tiles */
+  .ant-statistic-content-value {
+    font-size: 20px !important;
+  }
+
+  /* Ant Design upload */
+  .ant-upload-drag .ant-upload-drag-icon {
+    font-size: 32px !important;
+  }
+
+  /* Ant Design steps tiny */
+  .ant-steps-item-title {
+    padding-inline: 4px !important;
+    font-size: 12px !important;
+  }
+
+  /* Ensure no horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Landscape phones: prevent overly tall hero sections */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-section {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+}

@@ -1,0 +1,618 @@
+{
+  "title": "基于Spring Boot与React的个人博客系统设计与实现",
+  "goal": "毕业设计答辩PPT：介绍基于Spring Boot与React的个人博客系统的设计与实现，涵盖选题背景、技术选型、系统设计、核心功能、测试验证、总结展望",
+  "audience": "毕业答辩评委老师",
+  "owner": "张三",
+  "randomSeed": "blog-defense-20260712-alpha",
+  "themePack": "theme03",
+  "pageCount": 12,
+  "slides": [
+    {
+      "layout": "theme03_page004",
+      "props": {
+        "eyebrow": "本科毕业论文答辩",
+        "kicker": "基于Spring Boot与React的",
+        "titleKicker": "个人博客系统",
+        "titleA": "设计与实现",
+        "titleAccent": "",
+        "titleC": "",
+        "metaLines": [
+          "计算机科学与技术",
+          "学生：张三",
+          "指导教师：李四 副教授"
+        ],
+        "metaStrip": [
+          "2026 年 7 月"
+        ]
+      }
+    },
+    {
+      "layout": "theme03_page047",
+      "props": {
+        "kicker": "目录",
+        "title": "答辩提纲",
+        "subtitle": "6 大模块 · 完整汇报",
+        "blocks": [
+          {
+            "area": "01",
+            "cn": "选题背景与意义",
+            "en": "Background",
+            "g": 1,
+            "items": [
+              "研究背景",
+              "研究意义"
+            ]
+          },
+          {
+            "area": "02",
+            "cn": "技术选型与架构",
+            "en": "Technology",
+            "g": 2,
+            "items": [
+              "前端技术栈",
+              "后端技术栈"
+            ]
+          },
+          {
+            "area": "03",
+            "cn": "系统设计与实现",
+            "en": "Design & Impl",
+            "g": 2,
+            "items": [
+              "功能模块",
+              "数据库设计"
+            ]
+          },
+          {
+            "area": "04",
+            "cn": "核心功能展示",
+            "en": "Demo",
+            "g": 1,
+            "items": [
+              "认证模块",
+              "文章管理"
+            ]
+          },
+          {
+            "area": "05",
+            "cn": "系统测试",
+            "en": "Testing",
+            "g": 3,
+            "items": [
+              "功能测试",
+              "性能测试"
+            ]
+          },
+          {
+            "area": "06",
+            "cn": "总结与展望",
+            "en": "Summary",
+            "g": 1,
+            "items": [
+              "工作总结",
+              "不足与展望"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "layout": "theme03_page006",
+      "props": {
+        "kicker": "Chapter 01",
+        "titlePre": "选题",
+        "titleAccent": "背景与意义",
+        "chapters": [
+          {
+            "idx": "01",
+            "title": "选题背景与意义",
+            "en": "Background"
+          },
+          {
+            "idx": "02",
+            "title": "技术选型与架构",
+            "en": "Technology"
+          },
+          {
+            "idx": "03",
+            "title": "系统设计与实现",
+            "en": "Design"
+          },
+          {
+            "idx": "04",
+            "title": "核心功能展示",
+            "en": "Demo"
+          },
+          {
+            "idx": "05",
+            "title": "系统测试",
+            "en": "Testing"
+          },
+          {
+            "idx": "06",
+            "title": "总结与展望",
+            "en": "Summary"
+          }
+        ],
+        "itemCount": 6
+      }
+    },
+    {
+      "layout": "theme03_page007",
+      "props": {
+        "kicker": "研究背景",
+        "leadTitle": "为什么做这个系统？",
+        "leadBody": "Web技术快速发展，前后端分离成为主流架构模式",
+        "leadNote": "功能适中 · 界面美观 · 易于使用",
+        "cards": [
+          {
+            "idx": "1",
+            "name": "技术实践",
+            "dim": "理论",
+            "desc": "探索Spring Boot与React融合应用的最佳实践"
+          },
+          {
+            "idx": "2",
+            "name": "内容管理",
+            "dim": "实践",
+            "desc": "为用户提供完整的个人博客内容管理平台"
+          },
+          {
+            "idx": "3",
+            "name": "用户体验",
+            "dim": "设计",
+            "desc": "现代化UI设计，深色主题与动画效果"
+          }
+        ],
+        "cardCount": 3
+      }
+    },
+    {
+      "layout": "theme03_page066",
+      "props": {
+        "kicker": "核心指标",
+        "title": "系统数据概览",
+        "titleNote": "毕业设计成果量化展示",
+        "value": 6,
+        "centerLabel": "核心功能模块",
+        "calloutLabel": "技术栈",
+        "calloutPre": "前后端分离架构",
+        "calloutStrong": "12+",
+        "calloutPost": "开源技术组件",
+        "zones": [
+          {
+            "v0": 6,
+            "v1": 100,
+            "label": "功能模块"
+          },
+          {
+            "v0": 6,
+            "v1": 100,
+            "label": "数据表"
+          },
+          {
+            "v0": 32,
+            "v1": 100,
+            "label": "测试用例"
+          },
+          {
+            "v0": 100,
+            "v1": 100,
+            "label": "通过率"
+          }
+        ],
+        "support": [
+          {
+            "num": "100",
+            "unit": "%",
+            "note": "测试用例通过率"
+          },
+          {
+            "num": "<500",
+            "unit": "ms",
+            "note": "API平均响应时间"
+          },
+          {
+            "num": "100",
+            "unit": "并发",
+            "note": "支持并发用户数"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "theme03_page021",
+      "props": {
+        "kicker": "技术对比",
+        "title": "前端技术选型",
+        "cornerLabel": "React vs Vue",
+        "calloutLabel": "最终选择",
+        "calloutBody": "React 19 + TypeScript + Vite",
+        "companies": [
+          {
+            "name": "React 19",
+            "en": "前端框架",
+            "tier": "首选"
+          },
+          {
+            "name": "TypeScript",
+            "en": "类型安全",
+            "tier": "必选"
+          },
+          {
+            "name": "Vite 8",
+            "en": "构建工具",
+            "tier": "首选"
+          }
+        ],
+        "rows": [
+          {
+            "metric": "性能",
+            "en": "React",
+            "vals": [
+              "虚拟DOM",
+              "组件化",
+              "生态丰富"
+            ]
+          },
+          {
+            "metric": "类型",
+            "en": "TS",
+            "vals": [
+              "编译时检查",
+              "智能提示",
+              "可维护性"
+            ]
+          },
+          {
+            "metric": "构建",
+            "en": "Vite",
+            "vals": [
+              "ESM冷启动",
+              "HMR热更新",
+              "Rollup打包"
+            ]
+          },
+          {
+            "metric": "UI库",
+            "en": "AntD",
+            "vals": [
+              "企业级组件",
+              "深色主题",
+              "响应式"
+            ]
+          },
+          {
+            "metric": "动画",
+            "en": "Motion",
+            "vals": [
+              "页面过渡",
+              "交互动画",
+              "流畅体验"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "layout": "theme03_page060",
+      "props": {
+        "kicker": "后端技术栈",
+        "title": "Spring Boot 生态",
+        "titleNote": "Java 17 + Spring Boot 3.2",
+        "calloutLabel": "安全认证",
+        "copy": {
+          "t001": "Spring Security + JWT"
+        },
+        "data": [
+          {
+            "label": "Spring Boot",
+            "amt": 320,
+            "cnt": 1
+          },
+          {
+            "label": "MyBatis-Plus",
+            "amt": 280,
+            "cnt": 2
+          },
+          {
+            "label": "Spring Security",
+            "amt": 260,
+            "cnt": 3
+          },
+          {
+            "label": "MySQL 8.0",
+            "amt": 240,
+            "cnt": 4
+          }
+        ]
+      }
+    },
+    {
+      "layout": "theme03_page016",
+      "props": {
+        "kicker": "系统架构",
+        "title": "前后端分离架构",
+        "titleNote": "三层架构 · 职责清晰 · 低耦合",
+        "calloutLabel": "技术链路",
+        "copy": {
+          "t001": "React→API→Boot→MySQL"
+        },
+        "layers": [
+          {
+            "cn": "表现层",
+            "en": "Frontend",
+            "amt": 380,
+            "tag": "React + TS",
+            "rows": [
+              {
+                "seg": "UI组件",
+                "cos": [
+                  "Ant Design",
+                  "Framer Motion"
+                ]
+              },
+              {
+                "seg": "路由",
+                "cos": [
+                  "React Router v6",
+                  "SPA模式"
+                ]
+              }
+            ]
+          },
+          {
+            "cn": "业务层",
+            "en": "Backend",
+            "amt": 350,
+            "tag": "Spring Boot",
+            "rows": [
+              {
+                "seg": "认证",
+                "cos": [
+                  "Spring Security",
+                  "JWT",
+                  "过滤器链"
+                ]
+              },
+              {
+                "seg": "业务",
+                "cos": [
+                  "CRUD",
+                  "审核流程"
+                ]
+              }
+            ]
+          },
+          {
+            "cn": "数据层",
+            "en": "Database",
+            "amt": 300,
+            "tag": "MySQL 8.0",
+            "rows": [
+              {
+                "seg": "持久化",
+                "cos": [
+                  "MyBatis-Plus",
+                  "JDBC"
+                ]
+              },
+              {
+                "seg": "存储",
+                "cos": [
+                  "InnoDB"
+                ]
+              },
+              {
+                "seg": "优化",
+                "cos": [
+                  "utf8mb4"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "layout": "theme03_page034",
+      "props": {
+        "copy": {
+          "t001": "六大模块",
+          "t002": "完整闭环",
+          "t003": "前后端解耦",
+          "t004": "RESTful API 通信"
+        },
+        "chains": [
+          {
+            "tag": "认证",
+            "title": "用户认证与授权",
+            "nodes": [
+              "注册登录",
+              "JWT Token",
+              "Spring Security",
+              "RBAC权限"
+            ],
+            "outcomes": [
+              "无状态认证",
+              "角色权限控制"
+            ]
+          },
+          {
+            "tag": "文章",
+            "title": "文章管理与审核",
+            "nodes": [
+              "富文本编辑",
+              "待审核状态",
+              "管理员审核"
+            ],
+            "outcomes": [
+              "CRUD全流程",
+              "审核机制"
+            ]
+          },
+          {
+            "tag": "互动",
+            "title": "评论与社交互动",
+            "nodes": [
+              "发表评论",
+              "树形回复",
+              "评论审核"
+            ],
+            "outcomes": [
+              "多层讨论",
+              "内容安全"
+            ]
+          }
+        ],
+        "chainCount": 3
+      }
+    },
+    {
+      "layout": "theme03_page076",
+      "props": {
+        "kicker": "数据库设计",
+        "sectorTag": "数据持久化",
+        "titlePrefix": "核心",
+        "titleAccent": "数据表",
+        "titleSuffix": "结构设计",
+        "lead": "6张核心数据表，遵循第三范式，合理设置外键约束与索引",
+        "figureValue": "6",
+        "figureUnit": "张表",
+        "figureCaption": "用户·文章·分类·标签·评论",
+        "calloutLabel": "安全设计",
+        "calloutBody": "BCrypt加密 · 参数化查询 · CORS控制",
+        "chips": [
+          "users用户表",
+          "articles文章表",
+          "categories分类表"
+        ],
+        "chipCount": 3
+      }
+    },
+    {
+      "layout": "theme03_page056",
+      "props": {
+        "copy": {
+          "t001": "功能测试",
+          "t002": "性能测试",
+          "t003": "兼容性测试",
+          "t004": "32个用例",
+          "t005": "100%通过",
+          "t006": "100并发",
+          "t007": "响应<500ms",
+          "t008": "Chrome",
+          "t009": "Firefox",
+          "t010": "Edge",
+          "t011": "Safari",
+          "t012": "移动端",
+          "t013": "注册登录",
+          "t014": "文章管理",
+          "t015": "评论功能",
+          "t016": "审核流程",
+          "t017": "分类标签",
+          "t018": "API响应<500ms",
+          "t019": "首页加载<2s",
+          "t020": "详情加载<1s",
+          "t021": "JWT认证",
+          "t022": "BCrypt加密",
+          "t023": "防SQL注入",
+          "t024": "防XSS攻击",
+          "t025": "RBAC权限"
+        },
+        "narrativeItems": [
+          {
+            "k": "功能测试",
+            "en": "Functional",
+            "v": "20个用例 100%通过"
+          },
+          {
+            "k": "性能测试",
+            "en": "Performance",
+            "v": "100并发 稳定运行"
+          },
+          {
+            "k": "兼容测试",
+            "en": "Compatibility",
+            "v": "4浏览器+移动端"
+          }
+        ],
+        "deliveryItems": [
+          {
+            "k": "安全",
+            "en": "Security",
+            "v": "JWT+BCrypt+CORS"
+          },
+          {
+            "k": "性能",
+            "en": "Performance",
+            "v": "API<500ms"
+          },
+          {
+            "k": "可用",
+            "en": "Usability",
+            "v": "响应式设计"
+          },
+          {
+            "k": "扩展",
+            "en": "Scalability",
+            "v": "分层架构解耦"
+          }
+        ]
+      }
+    },
+    {
+      "layout": "theme03_page029",
+      "props": {
+        "copy": {
+          "t001": "工作总结",
+          "t002": "已完成功能",
+          "t003": "不足与展望",
+          "t004": "后续改进方向",
+          "t005": "技术收获",
+          "t006": "前后端分离架构实践",
+          "t007": "Spring Boot + React全栈开发",
+          "t008": "JWT安全认证",
+          "t009": "RESTful API设计",
+          "t010": "MySQL数据库设计",
+          "t011": "Ant Design UI",
+          "t012": "富文本编辑器",
+          "t013": "待完善"
+        },
+        "data": [
+          {
+            "region": "功能完成",
+            "en": "Completed",
+            "amt": 620,
+            "pct": 70
+          },
+          {
+            "region": "测试通过",
+            "en": "Tested",
+            "amt": 580,
+            "pct": 65
+          },
+          {
+            "region": "文档齐全",
+            "en": "Documented",
+            "amt": 550,
+            "pct": 60
+          },
+          {
+            "region": "待优化项",
+            "en": "TODO",
+            "amt": 200,
+            "pct": 35
+          },
+          {
+            "region": "新增规划",
+            "en": "Planned",
+            "amt": 150,
+            "pct": 25
+          }
+        ],
+        "itemCount": 5
+      }
+    }
+  ]
+}
