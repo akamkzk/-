@@ -271,7 +271,7 @@ export default function Profile() {
       <motion.div variants={fadeInUp}>
         <GlassCard glow style={{ padding: mobile ? '20px 16px' : '32px', marginBottom: 24, background: 'linear-gradient(135deg, rgba(102,126,234,0.08), rgba(118,75,162,0.08))' }}>
           <Row align="middle" gutter={mobile ? 12 : 24}>
-            <Col xs={24} sm={auto}>
+            <Col xs={24} sm={8}>
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ type: 'spring', stiffness: 300 }}

@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 @Configuration
 public class StaticResourceConfig implements WebMvcConfigurer {
 
-    @Value("${app.upload.path:./uploads}")
+    @Value("${app.upload.path:/tmp/uploads}")
     private String uploadPath;
 
     @Override
